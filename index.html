@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chúc Mừng Năm Mới</title>
+	<style type="text/css"></style>
+	<script type="text/javascript"></script>
+	<style type="text/cs">s</style>
+	<style> 
+      #img{display: block;
+       margin-left: auto; 
+       margin-right: auto;
+       width: 30rem;
+       height: 30rem;
+   }
+    summary{
+    	font-size: 50px;
+    	text-align: center;
+    }
+    body {
+    	background-image: url(img/2006c6cc74d3fa555125ac35c721f4e3.gif) ;
+    	
+    	
+    }
+    h1{
+    		font-size: 5rem;
+    	color: yellow;
+    	text-align: center;
+    }
+     h2{
+     		font-size: 4rem;
+     	  	color: yellow;
+    	text-align: center;
+    }
+    #content {
+    	font-size: 6rem;
+    	  	color: yellow;
+    	text-align: center;
+    }
+    </style>
+</head>
+<body>
+ <h1>Happy Women Day 8/3</h1>
+ 		<h2> Chúc người xem trang Web này:</h2>
+        <div id="content" >
+          
+        </div>
+     
+        <script language="javascript">
+            // Lấy 2 button và thẻ div
+            
+            var div = document.getElementById('content');
+           
+           	 var index=0;
+            // Thiết lập click cho button 1
+            div.onclick = function(){
+            
+            	  var texts = [
+            'Thật nhiều sức khỏe',
+            'Thật nhiều may mắn',
+            'Thật nhiều hạnh phúc',
+            'Ngày Càng Trẻ',
+            'Ngày càng đẹp'
+            ]
+            var cl =[
+            'yellow','red','orange',
+            'green','blue']
+                div.innerHTML = texts[index];
+                 document.getElementById("content").style.color = cl[index];
+                index++;
+			if (index==5){
+				index=0;
+				}
+			}
+			
+            setInterval(div.onclick,2000);
+             
+          
+          
+        </script>
+</body>
+</html>
